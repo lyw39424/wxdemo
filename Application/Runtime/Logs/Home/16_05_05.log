@@ -1,0 +1,533 @@
+[ 2016-05-05T09:44:13+08:00 ] 127.0.0.1 /wxdemo/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000919s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001191s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001373s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: id F:\wampcz\www\wxdemo\Application\Home\Controller\IndexController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `wx_wechat` [ RunTime:0.0071s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `wx_wechat` WHERE ( id= ) LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001196s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001384s ]
+
+[ 2016-05-05T11:42:39+08:00 ] 127.0.0.1 /wxdemo/Public/admin/js/upload/images/nophoto.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+
+[ 2016-05-05T11:57:26+08:00 ] 127.0.0.1 /wxdemo/Public/admin/upload/uploadify3.2.1/undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000559s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2016-05-05T14:07:10+08:00 ] 127.0.0.1 /wxdemo/Public/admin/static/js/H-ui.admin.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000593s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2016-05-05T14:07:10+08:00 ] 127.0.0.1 /wxdemo/Public/admin/static/js/H-ui.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2016-05-05T14:07:36+08:00 ] 127.0.0.1 /wxdemo/Public/admin/upload/img/uploadify-cancel.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+
+[ 2016-05-05T14:32:37+08:00 ] 127.0.0.1 /wxdemo/Public/admin/static/js/H-ui.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000973s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2016-05-05T14:32:37+08:00 ] 127.0.0.1 /wxdemo/Public/admin/static/js/H-ui.admin.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2016-05-05T15:02:44+08:00 ] 127.0.0.1 /wxdemo/Public/admin/static/js/H-ui.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000482s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2016-05-05T15:02:44+08:00 ] 127.0.0.1 /wxdemo/Public/admin/static/js/H-ui.admin.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000539s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2016-05-05T15:08:46+08:00 ] 127.0.0.1 /wxdemo/Public/admin/static/js/H-ui.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000643s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2016-05-05T15:08:46+08:00 ] 127.0.0.1 /wxdemo/Public/admin/static/js/H-ui.admin.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000532s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2016-05-05T15:11:35+08:00 ] 127.0.0.1 /wxdemo/Public/admin/static/js/H-ui.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2016-05-05T15:11:35+08:00 ] 127.0.0.1 /wxdemo/Public/admin/static/js/H-ui.admin.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000929s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001145s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2016-05-05T15:12:26+08:00 ] 127.0.0.1 /wxdemo/Public/admin/static/js/H-ui.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000727s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2016-05-05T15:12:26+08:00 ] 127.0.0.1 /wxdemo/Public/admin/static/js/H-ui.admin.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000585s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2016-05-05T15:14:22+08:00 ] 127.0.0.1 /wxdemo/Public/admin/static/js/H-ui.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000487s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2016-05-05T15:14:22+08:00 ] 127.0.0.1 /wxdemo/Public/admin/static/js/H-ui.admin.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000636s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2016-05-05T15:16:08+08:00 ] 127.0.0.1 /wxdemo/Public/admin/static/js/H-ui.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000657s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2016-05-05T15:16:08+08:00 ] 127.0.0.1 /wxdemo/Public/admin/static/js/H-ui.admin.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000458s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2016-05-05T15:53:10+08:00 ] 127.0.0.1 /wxdemo/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000865s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001145s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001428s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: id F:\wampcz\www\wxdemo\Application\Home\Controller\IndexController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `wx_wechat` [ RunTime:0.0030s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `wx_wechat` WHERE ( id= ) LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000547s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000645s ]
+
+[ 2016-05-05T15:53:30+08:00 ] 127.0.0.1 /wxdemo/Public/admin/static/js/H-ui.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000561s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000648s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2016-05-05T15:53:30+08:00 ] 127.0.0.1 /wxdemo/Public/admin/static/js/H-ui.admin.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000479s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2016-05-05T16:45:06+08:00 ] 127.0.0.1 /wxdemo/Public/admin/static/js/H-ui.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000426s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000700s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2016-05-05T16:45:06+08:00 ] 127.0.0.1 /wxdemo/Public/admin/static/js/H-ui.admin.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000571s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2016-05-05T17:04:01+08:00 ] 127.0.0.1 /wxdemo/Public/admin/static/js/H-ui.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000738s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000586s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000667s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2016-05-05T17:04:01+08:00 ] 127.0.0.1 /wxdemo/Public/admin/static/js/H-ui.admin.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000627s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2016-05-05T17:04:07+08:00 ] 127.0.0.1 /wxdemo/Public/admin/static/js/H-ui.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000924s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001029s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2016-05-05T17:04:07+08:00 ] 127.0.0.1 /wxdemo/Public/admin/static/js/H-ui.admin.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000638s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2016-05-05T17:04:13+08:00 ] 127.0.0.1 /wxdemo/Public/admin/static/js/H-ui.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2016-05-05T17:04:13+08:00 ] 127.0.0.1 /wxdemo/Public/admin/static/js/H-ui.admin.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000632s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2016-05-05T17:06:16+08:00 ] 127.0.0.1 /wxdemo/Public/admin/static/js/H-ui.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000552s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2016-05-05T17:06:16+08:00 ] 127.0.0.1 /wxdemo/Public/admin/static/js/H-ui.admin.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000647s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2016-05-05T17:07:51+08:00 ] 127.0.0.1 /wxdemo/Public/admin/static/js/H-ui.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000582s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000669s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2016-05-05T17:07:51+08:00 ] 127.0.0.1 /wxdemo/Public/admin/static/js/H-ui.admin.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2016-05-05T17:08:05+08:00 ] 127.0.0.1 /wxdemo/Public/admin/static/js/H-ui.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000720s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2016-05-05T17:08:05+08:00 ] 127.0.0.1 /wxdemo/Public/admin/static/js/H-ui.admin.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000471s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2016-05-05T17:12:12+08:00 ] 127.0.0.1 /wxdemo/Public/admin/static/js/H-ui.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000558s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2016-05-05T17:12:12+08:00 ] 127.0.0.1 /wxdemo/Public/admin/static/js/H-ui.admin.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001200s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000748s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2016-05-05T17:12:18+08:00 ] 127.0.0.1 /wxdemo/Public/admin/upload/img/uploadify-cancel.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000788s ]
+
+[ 2016-05-05T17:12:40+08:00 ] 127.0.0.1 /wxdemo/Public/admin/static/js/H-ui.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000692s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2016-05-05T17:12:40+08:00 ] 127.0.0.1 /wxdemo/Public/admin/static/js/H-ui.admin.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000386s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000641s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2016-05-05T17:12:43+08:00 ] 127.0.0.1 /wxdemo/Public/admin/upload/img/uploadify-cancel.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+
+[ 2016-05-05T17:12:52+08:00 ] 127.0.0.1 /wxdemo/Public/admin/static/js/H-ui.admin.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000480s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2016-05-05T17:12:52+08:00 ] 127.0.0.1 /wxdemo/Public/admin/static/js/H-ui.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000566s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000741s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2016-05-05T17:13:04+08:00 ] 127.0.0.1 /wxdemo/Public/admin/static/js/H-ui.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000681s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2016-05-05T17:13:04+08:00 ] 127.0.0.1 /wxdemo/Public/admin/static/js/H-ui.admin.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000685s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2016-05-05T17:20:42+08:00 ] 127.0.0.1 /wxdemo/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001042s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001529s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: id F:\wampcz\www\wxdemo\Application\Home\Controller\IndexController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `wx_wechat` [ RunTime:0.0037s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `wx_wechat` WHERE ( id= ) LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000681s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000802s ]
+
+[ 2016-05-05T17:21:07+08:00 ] 127.0.0.1 /wxdemo/system-base.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000742s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:System-base
+

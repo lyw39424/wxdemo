@@ -1,0 +1,87 @@
+<html>
+<head>
+    <include file="common:meta" />
+<![endif]-->
+<!--/meta 作为公共模版分离出去-->
+<title>群发消息</title>
+</head>
+<body>
+<div class="page-container">
+	<form class="form form-horizontal" action="{:U('Send/add')}" method="post"  name="form1">
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>关键字名称：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" value="" placeholder="" id="key_name" name="key_name">
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-3">回复类型：</label>
+			<div class="formControls col-xs-8 col-sm-9"> <span class="select-box">
+				<select class="select" size="1" name="province" id="province" onChange="getCity()">
+					<OPTION VALUE="0">请选择类型 </OPTION>
+					<volist name="cate"  id="vo">
+					<OPTION VALUE="{$vo.code}">{$vo.name} </OPTION>
+					</volist>
+				</select>
+				</span> </div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-3">回复内容：</label>
+			<div class="formControls col-xs-8 col-sm-9"> <span class="select-box">
+				<select class="select" size="1" name="city">
+					<OPTION VALUE="0">请选择回复内容</OPTION>
+				</select>
+				</span> </div>
+		</div>
+		<div class="row cl">
+			<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
+				<input class="btn btn-primary radius" type="submit" value="&nbsp;&nbsp;提交&nbsp;&nbsp;">
+				<button onClick="layer_close();" class="btn btn-default radius" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+			</div>
+		</div>
+	</form>
+</div>
+</div>
+
+<!--_footer 作为公共模版分离出去-->
+<include file="common:footer" />
+<script  type="text/javascript">
+	   //定义了城市的二维数组，里面的顺序跟省份的顺序是相同的。通过selectedIndex获得省份的下标值来得到相应的城市数组
+
+   function getCity(){
+
+	   //获取下拉框值
+	   var ff=$('#province option:selected') .val();
+	   //获得二级下拉框的对象
+       var sltCity=document.form1.city;
+		         //用js获取二级菜单值
+	   sltCity.length=1;
+	   $.ajax({
+		   url: '__URL__/count',
+		   type: "post",
+		   data: {
+			   'id': ff,
+
+		   },
+		   dataType: 'json',
+		   error: function () {
+			   layer.alert('服务器忙，请稍候再试')
+		   },
+		   success: function (state) {
+
+			   for(var i=0;i<state.length;i++){
+				   sltCity[i+1]=new Option(state[i].name,state[i].id);
+			   }
+			    return;
+		   }
+	   });
+
+		       //清空二级下拉框，仅留提示选项
+
+		         //将城市数组中的值填充到城市下拉框中
+
+		     }
+	</script>
+
+</body>
+</html>

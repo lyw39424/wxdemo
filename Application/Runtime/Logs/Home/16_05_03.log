@@ -1,0 +1,17 @@
+[ 2016-05-03T15:40:16+08:00 ] 127.0.0.1 /wxdemo/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001592s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001838s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002231s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: id F:\wampcz\www\wxdemo\Application\Home\Controller\IndexController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `wx_wechat` [ RunTime:0.0072s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `wx_wechat` WHERE ( id= ) LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001180s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001392s ]
+

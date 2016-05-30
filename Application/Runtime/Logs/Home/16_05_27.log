@@ -1,0 +1,91 @@
+[ 2016-05-27T09:20:14+08:00 ] 127.0.0.1 /wxdemo/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000812s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001151s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001327s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+
+[ 2016-05-27T09:20:14+08:00 ] 127.0.0.1 /wxdemo/WxLogin/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000473s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wx_adminuser` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `wx_adminuser` WHERE ( id='' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005682s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005770s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000514s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000597s ]
+
+[ 2016-05-27T09:20:14+08:00 ] 127.0.0.1 /wxdemo/Home/WxLogin/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000573s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000655s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A non well formed numeric value encountered F:\wampcz\www\wxdemo\ThinkPHP\Library\Think\Verify.class.php 第 166 行.
+NOTIC: [8] A non well formed numeric value encountered F:\wampcz\www\wxdemo\ThinkPHP\Library\Think\Verify.class.php 第 166 行.
+NOTIC: [8] A non well formed numeric value encountered F:\wampcz\www\wxdemo\ThinkPHP\Library\Think\Verify.class.php 第 166 行.
+NOTIC: [8] A non well formed numeric value encountered F:\wampcz\www\wxdemo\ThinkPHP\Library\Think\Verify.class.php 第 166 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000641s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000726s ]
+
+[ 2016-05-27T09:20:59+08:00 ] 127.0.0.1 /wxdemo/Public/whome/images/arrows.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+
+[ 2016-05-27T09:20:59+08:00 ] 127.0.0.1 /wxdemo/Public/whome/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+
+[ 2016-05-27T09:36:25+08:00 ] 127.0.0.1 /wxdemo/Public/whome/images/arrows.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+
+[ 2016-05-27T14:39:26+08:00 ] 127.0.0.1 /wxdemo/Public/whome/images/arrows.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+
+[ 2016-05-27T14:39:31+08:00 ] 127.0.0.1 /wxdemo/Public/whome/images/arrows.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+
+[ 2016-05-27T14:39:46+08:00 ] ::1 /wxdemo/Public/whome/images/arrows.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+
+[ 2016-05-27T14:39:46+08:00 ] ::1 /wxdemo/Public/whome/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+
+[ 2016-05-27T15:13:10+08:00 ] ::1 /wxdemo/Public/whome/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+

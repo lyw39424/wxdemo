@@ -1,0 +1,119 @@
+<!--_meta 作为公共模版分离出去-->
+<!DOCTYPE HTML>
+<html>
+<head>
+	<include file="common:meta" />
+	<![endif]-->
+	<!--/meta 作为公共模版分离出去-->
+	<title>修改公众号</title>
+</head>
+<body>
+<article class="page-container">
+	<form action="{:U('Wechat/update')}" method="post" class="form form-horizontal" id="form-member-add">
+		<input type="hidden"  value="{$detail.id}" id="id" name="id">
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>公众账号名称：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" value="{$detail.wxname}" placeholder="" id="wxname" name="wxname">
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>微信公众号：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" value="{$detail.wxnumber}" placeholder="" id="wxnumber" name="wxnumber">
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>APPID：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" value="{$detail.appid}" placeholder="" id="appid" name="appid">
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>app应用秘钥：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" value="{$detail.appsecret}" placeholder="" id="appsecret" name="appsecret">
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>token：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" value="{$detail.token}" placeholder="" id="token" name="token">
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>邮箱：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" placeholder="@" name="email" id="email" value="{$detail.emall}">
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-3">账号类型：</label>
+			<div class="formControls col-xs-8 col-sm-9"> <span class="select-box">
+				<select class="select" size="1" name="wxtype">
+					<option value="1">订阅号</option>
+					<option value="2">服务号</option>
+					<option value="3">企业号</option>
+				</select>
+				</span> </div>
+		</div>
+
+		<div class="row cl">
+			<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
+				<input class="btn btn-primary radius" type="submit" value="&nbsp;&nbsp;提交&nbsp;&nbsp;">
+			</div>
+		</div>
+	</form>
+</article>
+
+<!--_footer 作为公共模版分离出去-->
+<include file="common:footer" />
+<!--/_footer /作为公共模版分离出去-->
+
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript">
+	$(function(){
+		$('.skin-minimal input').iCheck({
+			checkboxClass: 'icheckbox-blue',
+			radioClass: 'iradio-blue',
+			increaseArea: '20%'
+		});
+
+		$("#form-member-add").validate({
+			rules:{
+				username:{
+					required:true,
+					minlength:2,
+					maxlength:16
+				},
+				sex:{
+					required:true,
+				},
+				mobile:{
+					required:true,
+					isMobile:true,
+				},
+				email:{
+					required:true,
+					email:true,
+				},
+				uploadfile:{
+					required:true,
+				},
+
+			},
+			onkeyup:false,
+			focusCleanup:true,
+			success:"valid",
+			submitHandler:function(form){
+				$(form).ajaxSubmit();
+				var index = parent.layer.getFrameIndex(window.name);
+				parent.$('.btn-refresh').click();
+				parent.layer.close(index);
+			}
+		});
+	});
+</script>
+<!--/请在上方写此页面业务相关的脚本-->
+</body>
+</html>

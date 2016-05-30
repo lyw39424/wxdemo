@@ -1,0 +1,72 @@
+<!--_meta 作为公共模版分离出去-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<include file="common:meta" />
+	<link type="text/css" rel="stylesheet" href="__PUBLIC__/admin/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/stylesCode.css">
+<title>查看图文信息</title>
+</head>
+
+<body>
+<div class="content clearfix">
+	<div class="section-container col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-0">
+		<volist name="list"  id="vo">
+		<div class="section clearfix">
+			<div class="sec-header col-xs-10 col-xs-offset-1">
+			</div>
+			<div class="items-container col-xs-12">
+				<div class="item col-lg-3 col-sm-4 col-xs-6">
+					<div class="btn01">
+						<img src="__ROOT__/Uploads{$vo.picurl}" alt="213213">
+						<div  class="ovrly"  style="color:#FF0000">{$vo.name}</div>
+						<div class="buttons">
+							<a href="javascript:" onClick="picture_edit('编辑','__URL__/update','{$vo.id}')" class="fa fa-link"><i class="Hui-iconfont">&#xe6df;</i></a>
+							<a href="javascript:" onClick="picture_del('删除','__URL__/delete','{$vo.id}')" class="fa fa-search"><i class="Hui-iconfont">&#xe609;</i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+        </volist>
+	</div>
+</div>
+<include file="common:footer" />
+<script type="text/javascript">
+<!--/请在上方写此页面业务相关的脚本-->
+function picture_edit(title,url,id){
+var index = layer.open({
+type: 2,
+title: title,
+content: url+'/id/'+id
+});
+layer.full(index);
+}
+/*图片-删除*/
+function picture_del(obj,id){
+layer.confirm('确认要删除吗？',function(index){
+$.ajax({
+url: '__URL__/delete',
+type: "post",
+data: {
+'id': id
+},
+dataType: 'json',
+error: function () {
+layer.alert('服务器忙，请稍候再试')
+},
+success: function (state) {
+
+if(state.state == 0){
+layer.msg(state.msg);
+return;
+}
+}
+});
+$(obj).parents("tr").remove();
+layer.msg('已删除!',{icon:1,time:1000});
+});
+}
+</script>
+</body>
+</html>

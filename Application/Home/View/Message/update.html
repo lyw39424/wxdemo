@@ -1,0 +1,38 @@
+<!--_meta 作为公共模版分离出去-->
+<!DOCTYPE HTML>
+<html>
+<head>
+	<script src="__PUBLIC__/admin/lib/jquery/1.9.1/jquery.min.js" ></script>
+	<link href="__PUBLIC__/admin/upload/uploadify3.2.1/uploadify.css" rel="stylesheet" type="text/css" />
+	<script src="__PUBLIC__/admin/upload/uploadify3.2.1/jquery.uploadify.min.js"></script>
+<include file="common:meta" />
+<title>指定回复消息</title>
+</head>
+<body>
+<article class="page-container">
+	<form class="form form-horizontal" action="{:U('Message/update')}" method="post" id="form-admin-add">
+		<input type="hidden" id="id" name="id" value="{$id}">
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>视频描述：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<textarea name="sendcount"  style="width:1000px;height:240px;" ></textarea>
+			</div>
+        </div>
+	<div class="row cl">
+		<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
+			<input class="btn btn-primary radius" type="submit" value="&nbsp;&nbsp;提交&nbsp;&nbsp;">
+		</div>
+	</div>
+	</form>
+</article>
+<script type="text/javascript" src="__PUBLIC__/admin/lib/layer/2.1/layer.js"></script>
+<script type="text/javascript" src="__PUBLIC__/admin/lib/icheck/jquery.icheck.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/admin/lib/jquery.validation/1.14.0/jquery.validate.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/admin/lib/jquery.validation/1.14.0/validate-methods.js"></script>
+<script type="text/javascript" src="__PUBLIC__/admin/lib/jquery.validation/1.14.0/messages_zh.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/admin/static/js/H-ui.js"></script>
+<script type="text/javascript" src="__PUBLIC__/admin/static/js/H-ui.admin.js"></script>
+
+<!--/请在上方写此页面业务相关的脚本-->
+</body>
+</html>

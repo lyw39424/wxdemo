@@ -1,0 +1,623 @@
+[ 2016-05-12T13:50:41+08:00 ] 127.0.0.1 /wxdemo/admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000807s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041220s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041309s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000511s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000589s ]
+
+[ 2016-05-12T13:50:41+08:00 ] 127.0.0.1 /wxdemo/admin/WxOthor/welcome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000218s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012147s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012244s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000485s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000564s ]
+
+[ 2016-05-12T13:50:44+08:00 ] 127.0.0.1 /wxdemo/Admin/Menue/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000687s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000747s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000879s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: select count(DISTINCT menu_cate) as count FROM wx_hmenu [ RunTime:0.0007s ]
+SQL: select DISTINCT  menu_cate as menu_name,id,creat_name FROM wx_hmenu GROUP BY menu_cate [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000279s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018531s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018666s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000748s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000811s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000933s ]
+
+[ 2016-05-12T13:50:46+08:00 ] 127.0.0.1 /wxdemo/Admin/Role/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000553s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wx_rolue` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `wx_rolue`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wx_wechat` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `wx_wechat` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006987s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007070s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000428s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000521s ]
+
+[ 2016-05-12T13:50:47+08:00 ] 127.0.0.1 /wxdemo/Admin/AdminUser/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000667s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wx_adminuser` [ RunTime:0.0034s ]
+NOTIC: [8] Undefined index: code F:\wampcz\www\wxdemo\Application\Admin\Controller\AdminUserController.class.php 第 9 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `wx_adminuser` WHERE `state` = '1' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wx_adminuser` WHERE `state` = '1' ORDER BY id desc LIMIT 0,8   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wx_rolue` [ RunTime:0.0038s ]
+SQL: SELECT `id`,`name` FROM `wx_rolue` WHERE ( id='7' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017162s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017265s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000550s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000643s ]
+
+[ 2016-05-12T13:50:51+08:00 ] 127.0.0.1 /wxdemo/Admin/AdminUser/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000729s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001526s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wx_rolue` [ RunTime:0.0036s ]
+SQL: SELECT `id`,`name` FROM `wx_rolue`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020028s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020179s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000251s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000397s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000467s ]
+
+[ 2016-05-12T13:50:51+08:00 ] 127.0.0.1 /wxdemo/Admin/AdminUser/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wx_adminuser` [ RunTime:0.0029s ]
+NOTIC: [8] Undefined index: code F:\wampcz\www\wxdemo\Application\Admin\Controller\AdminUserController.class.php 第 9 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `wx_adminuser` WHERE `state` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_adminuser` WHERE `state` = '1' ORDER BY id desc LIMIT 0,8   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wx_rolue` [ RunTime:0.0025s ]
+SQL: SELECT `id`,`name` FROM `wx_rolue` WHERE ( id='7' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009115s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009203s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000240s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000433s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000509s ]
+
+[ 2016-05-12T13:51:08+08:00 ] 127.0.0.1 /wxdemo/Admin/Menue/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000657s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: select count(DISTINCT menu_cate) as count FROM wx_hmenu [ RunTime:0.0005s ]
+SQL: select DISTINCT  menu_cate as menu_name,id,creat_name FROM wx_hmenu GROUP BY menu_cate [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007747s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007886s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000545s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000648s ]
+
+[ 2016-05-12T13:51:09+08:00 ] 127.0.0.1 /wxdemo/Admin/Menue/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001436s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018657s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018826s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000440s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000518s ]
+
+[ 2016-05-12T13:51:12+08:00 ] 127.0.0.1 /wxdemo/Admin/AdminUser/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000654s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000839s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wx_adminuser` [ RunTime:0.0048s ]
+NOTIC: [8] Undefined index: code F:\wampcz\www\wxdemo\Application\Admin\Controller\AdminUserController.class.php 第 9 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `wx_adminuser` WHERE `state` = '1' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wx_adminuser` WHERE `state` = '1' ORDER BY id desc LIMIT 0,8   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wx_rolue` [ RunTime:0.0038s ]
+SQL: SELECT `id`,`name` FROM `wx_rolue` WHERE ( id='7' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000256s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012523s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012643s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000494s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000634s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000742s ]
+
+[ 2016-05-12T13:51:15+08:00 ] 127.0.0.1 /wxdemo/Admin/AdminUser/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wx_rolue` [ RunTime:0.0036s ]
+SQL: SELECT `id`,`name` FROM `wx_rolue`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007389s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007478s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000461s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000533s ]
+
+[ 2016-05-12T13:51:15+08:00 ] 127.0.0.1 /wxdemo/Admin/AdminUser/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000550s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wx_adminuser` [ RunTime:0.0029s ]
+NOTIC: [8] Undefined index: code F:\wampcz\www\wxdemo\Application\Admin\Controller\AdminUserController.class.php 第 9 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `wx_adminuser` WHERE `state` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_adminuser` WHERE `state` = '1' ORDER BY id desc LIMIT 0,8   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wx_rolue` [ RunTime:0.0028s ]
+SQL: SELECT `id`,`name` FROM `wx_rolue` WHERE ( id='7' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000220s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009499s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009636s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000538s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000613s ]
+
+[ 2016-05-12T13:51:20+08:00 ] 127.0.0.1 /wxdemo/Admin/AdminUser/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000632s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000765s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000909s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wx_adminuser` [ RunTime:0.0049s ]
+NOTIC: [8] Undefined index: code F:\wampcz\www\wxdemo\Application\Admin\Controller\AdminUserController.class.php 第 9 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `wx_adminuser` WHERE `state` = '1' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wx_adminuser` WHERE `state` = '1' ORDER BY id desc LIMIT 0,8   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wx_rolue` [ RunTime:0.0047s ]
+SQL: SELECT `id`,`name` FROM `wx_rolue` WHERE ( id='7' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000295s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014784s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014929s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000578s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000740s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000869s ]
+
+[ 2016-05-12T13:51:21+08:00 ] 127.0.0.1 /wxdemo/Admin/AdminUser/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000872s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000950s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001144s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wx_rolue` [ RunTime:0.0031s ]
+SQL: SELECT `id`,`name` FROM `wx_rolue`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000255s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008691s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008795s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000464s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000540s ]
+
+[ 2016-05-12T13:51:21+08:00 ] 127.0.0.1 /wxdemo/Admin/AdminUser/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000815s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wx_adminuser` [ RunTime:0.0035s ]
+NOTIC: [8] Undefined index: code F:\wampcz\www\wxdemo\Application\Admin\Controller\AdminUserController.class.php 第 9 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `wx_adminuser` WHERE `state` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_adminuser` WHERE `state` = '1' ORDER BY id desc LIMIT 0,8   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wx_rolue` [ RunTime:0.0028s ]
+SQL: SELECT `id`,`name` FROM `wx_rolue` WHERE ( id='7' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009469s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009558s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000421s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000494s ]
+
+[ 2016-05-12T13:51:24+08:00 ] 127.0.0.1 /wxdemo/Admin/Role/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000493s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wx_rolue` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `wx_rolue`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wx_wechat` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `wx_wechat` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007609s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007696s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000466s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000538s ]
+
+[ 2016-05-12T13:51:25+08:00 ] 127.0.0.1 /wxdemo/Admin/Role/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000690s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000864s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wx_wechat` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `wx_wechat`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wx_hmenu` [ RunTime:0.0043s ]
+SQL: SELECT DISTINCT  `menu_cate` FROM `wx_hmenu`  [ RunTime:0.0007s ]
+SQL: SELECT DISTINCT  `menu_tite`,`titel_code`,`z_fkid` FROM `wx_hmenu` WHERE ( menu_cate='消息管理' )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wx_hmenu` WHERE ( f_fkid='{AB126B44-CEB6-416A-B2DA-1F7F5F57083C}' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wx_hmenu` WHERE ( f_fkid='{C65600E0-F56F-42AA-8A90-6832C6410862}' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wx_hmenu` WHERE ( f_fkid='{6B6BDC28-F01D-4F04-AD13-23CCAAE2007F}' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_hmenu` WHERE ( f_fkid='{CC19F0D3-55E5-4A93-928D-762F82F18A17}' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_hmenu` WHERE ( f_fkid='{AE3EE143-BBAC-4A73-AEA3-FD7F67A25D65}' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_hmenu` WHERE ( f_fkid='{3685DD50-5ABD-41FE-B793-FCD5B6F8F91B}' )  [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `menu_tite`,`titel_code`,`z_fkid` FROM `wx_hmenu` WHERE ( menu_cate='基本设置' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_hmenu` WHERE ( f_fkid='{B81D0C98-759F-483C-9615-2756A7BD7FCC}' )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000225s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011793s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011884s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000470s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000567s ]
+
+[ 2016-05-12T13:51:55+08:00 ] 127.0.0.1 /wxdemo/Admin/Role/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000682s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000552s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wx_rolue` [ RunTime:0.0032s ]
+SQL: DELETE FROM `wx_rolue` WHERE ( id='' ) [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: username F:\wampcz\www\wxdemo\Application\Admin\Controller\RoleController.class.php 第 29 行.
+SQL: INSERT INTO `wx_rolue` (`creat_time`,`creat_id`,`name`,`number`,`wxid`,`catalog`,`two_cate`,`code`) VALUES ('2016-05-12 13:51:55','2','微信测试用户','{FC6FDCE1-B42F-4203-B91A-E7059573EACE}','1','基本设置','数据字典+Cate-index','Cate-add,Cate-update,Cate-delete,WxIndex-index') [ RunTime:0.0309s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000589s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000676s ]
+
+[ 2016-05-12T13:51:55+08:00 ] 127.0.0.1 /wxdemo/Admin/Role/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001129s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001101s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001342s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wx_rolue` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `wx_rolue`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wx_wechat` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `wx_wechat` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wx_wechat` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000348s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014589s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014761s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000630s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000510s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000602s ]
+
+[ 2016-05-12T13:51:59+08:00 ] 127.0.0.1 /wxdemo/Admin/AdminUser/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001189s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000647s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wx_adminuser` [ RunTime:0.0033s ]
+NOTIC: [8] Undefined index: code F:\wampcz\www\wxdemo\Application\Admin\Controller\AdminUserController.class.php 第 9 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `wx_adminuser` WHERE `state` = '1' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wx_adminuser` WHERE `state` = '1' ORDER BY id desc LIMIT 0,8   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wx_rolue` [ RunTime:0.0032s ]
+SQL: SELECT `id`,`name` FROM `wx_rolue` WHERE ( id='7' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009636s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009728s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000543s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000628s ]
+
+[ 2016-05-12T13:52:00+08:00 ] 127.0.0.1 /wxdemo/Admin/AdminUser/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000701s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000764s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000922s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wx_rolue` [ RunTime:0.0036s ]
+SQL: SELECT `id`,`name` FROM `wx_rolue`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000212s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007892s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008021s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000548s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000666s ]
+
+[ 2016-05-12T13:52:00+08:00 ] 127.0.0.1 /wxdemo/Admin/AdminUser/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000491s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wx_adminuser` [ RunTime:0.0031s ]
+NOTIC: [8] Undefined index: code F:\wampcz\www\wxdemo\Application\Admin\Controller\AdminUserController.class.php 第 9 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `wx_adminuser` WHERE `state` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_adminuser` WHERE `state` = '1' ORDER BY id desc LIMIT 0,8   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wx_rolue` [ RunTime:0.0032s ]
+SQL: SELECT `id`,`name` FROM `wx_rolue` WHERE ( id='7' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008926s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000405s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000475s ]
+
+[ 2016-05-12T13:52:22+08:00 ] 127.0.0.1 /wxdemo/Admin/AdminUser/img.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000448s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\wampcz\www\wxdemo\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' F:\wampcz\www\wxdemo\Application\Admin\Common\UploadController.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant url - assumed 'url' F:\wampcz\www\wxdemo\Application\Admin\Common\UploadController.class.php 第 23 行.
+
+[ 2016-05-12T13:52:44+08:00 ] 127.0.0.1 /wxdemo/Admin/AdminUser/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000441s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000680s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000770s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wx_adminuser` [ RunTime:0.0031s ]
+NOTIC: [8] Undefined index: username F:\wampcz\www\wxdemo\Application\Admin\Controller\AdminUserController.class.php 第 39 行.
+SQL: INSERT INTO `wx_adminuser` (`creat_time`,`creat_name`,`creat_id`,`name`,`number`,`code`,`img`,`state`,`sex`,`phone`,`email`) VALUES ('2016-05-12 13:52:44',NULL,'2','liuqi007','e10adc3949ba59abbe56e057f20f883e','8','/Store/zhut/2016-05-12/57341a16cca31.jpg','1','on','18683081893','3216456@qq.com') [ RunTime:0.0223s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000773s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000860s ]
+
+[ 2016-05-12T13:52:44+08:00 ] 127.0.0.1 /wxdemo/Admin/AdminUser/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000428s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000733s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wx_adminuser` [ RunTime:0.0035s ]
+NOTIC: [8] Undefined index: code F:\wampcz\www\wxdemo\Application\Admin\Controller\AdminUserController.class.php 第 9 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `wx_adminuser` WHERE `state` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_adminuser` WHERE `state` = '1' ORDER BY id desc LIMIT 0,8   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wx_rolue` [ RunTime:0.0027s ]
+SQL: SELECT `id`,`name` FROM `wx_rolue` WHERE ( id='8' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name` FROM `wx_rolue` WHERE ( id='7' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000217s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009938s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010093s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000608s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000693s ]
+

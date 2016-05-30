@@ -1,0 +1,369 @@
+[ 2016-05-09T11:24:25+08:00 ] 127.0.0.1 /wxdemo/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000661s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000998s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: id F:\wampcz\www\wxdemo\Application\Home\Controller\IndexController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `wx_wechat` [ RunTime:0.0035s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `wx_wechat` WHERE ( id= ) LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000752s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000847s ]
+
+[ 2016-05-09T11:24:53+08:00 ] 127.0.0.1 /wxdemo/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000770s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001460s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: id F:\wampcz\www\wxdemo\Application\Home\Controller\IndexController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `wx_wechat` [ RunTime:0.0249s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `wx_wechat` WHERE ( id= ) LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000772s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000872s ]
+
+[ 2016-05-09T11:29:57+08:00 ] 127.0.0.1 /wxdemo/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000715s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000885s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001025s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: id F:\wampcz\www\wxdemo\Application\Home\Controller\IndexController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `wx_wechat` [ RunTime:0.0244s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `wx_wechat` WHERE ( id= ) LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001062s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001209s ]
+
+[ 2016-05-09T11:34:40+08:00 ] 127.0.0.1 /wxdemo/WxIndex/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000892s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000736s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000303s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000574s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.099707s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.099881s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001020s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001225s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001528s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001740s ]
+
+[ 2016-05-09T11:34:40+08:00 ] 127.0.0.1 /wxdemo/WxIndex/WxOther/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000689s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 非法操作:WxOther
+
+[ 2016-05-09T11:35:05+08:00 ] 127.0.0.1 /wxdemo/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001191s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001635s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: id F:\wampcz\www\wxdemo\Application\Home\Controller\IndexController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `wx_wechat` [ RunTime:0.0034s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `wx_wechat` WHERE ( id= ) LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000731s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000830s ]
+
+[ 2016-05-09T11:36:19+08:00 ] 127.0.0.1 /wxdemo/WxIndex/WxMenu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000655s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001082s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001225s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 非法操作:WxMenu
+
+[ 2016-05-09T11:36:21+08:00 ] 127.0.0.1 /wxdemo/WxIndex/WxMenu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000704s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001164s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001321s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 非法操作:WxMenu
+
+[ 2016-05-09T11:37:01+08:00 ] 127.0.0.1 /wxdemo/WxIndex/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000691s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001172s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000172s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000320s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014860s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000779s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000908s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001124s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001258s ]
+
+[ 2016-05-09T11:37:02+08:00 ] 127.0.0.1 /wxdemo/WxIndex/WxOther/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000600s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 非法操作:WxOther
+
+[ 2016-05-09T11:37:43+08:00 ] 127.0.0.1 /wxdemo/WxIndex/WxMenu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000576s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000648s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 非法操作:WxMenu
+
+[ 2016-05-09T11:38:02+08:00 ] 127.0.0.1 /wxdemo/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000882s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: id F:\wampcz\www\wxdemo\Application\Home\Controller\IndexController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `wx_wechat` [ RunTime:0.0036s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `wx_wechat` WHERE ( id= ) LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000810s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000911s ]
+
+[ 2016-05-09T11:38:25+08:00 ] 127.0.0.1 /wxdemo/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000523s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000793s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000238s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010922s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011032s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000641s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000769s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000868s ]
+
+[ 2016-05-09T11:38:25+08:00 ] 127.0.0.1 /wxdemo/WxOther/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000590s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000217s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019495s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019584s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000399s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000551s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000628s ]
+
+[ 2016-05-09T11:38:50+08:00 ] 127.0.0.1 /wxdemo/WxMenu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000814s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000921s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wx_menue` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `wx_menue` WHERE `pid` = '0' AND `wxid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wx_menue` WHERE ( pid='9D4479C8-3295-48CB-B2EF-07313366BF5F' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_menue` WHERE ( pid='07B19906-2802-436E-B72B-DE6DE928672B' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_menue` WHERE ( pid='0F5AB5B9-DB6C-4712-8221-7DA7A952F6A3' )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: 0 F:\wampcz\www\wxdemo\Application\Home\Controller\WxMenuController.class.php 第 135 行.
+NOTIC: [8] Undefined index: 1 F:\wampcz\www\wxdemo\Application\Home\Controller\WxMenuController.class.php 第 136 行.
+NOTIC: [8] Undefined index: 2 F:\wampcz\www\wxdemo\Application\Home\Controller\WxMenuController.class.php 第 137 行.
+NOTIC: [8] Undefined index: 3 F:\wampcz\www\wxdemo\Application\Home\Controller\WxMenuController.class.php 第 138 行.
+NOTIC: [8] Undefined index: 4 F:\wampcz\www\wxdemo\Application\Home\Controller\WxMenuController.class.php 第 139 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000176s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000255s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026236s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026341s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000592s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000610s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000692s ]
+
+[ 2016-05-09T11:38:50+08:00 ] 127.0.0.1 /wxdemo/WxMenu/lib/webuploader/0.1.5/webuploader.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000759s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000870s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 非法操作:lib
+
+[ 2016-05-09T13:04:37+08:00 ] 127.0.0.1 /wxdemo/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000651s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000210s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009789s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009885s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000546s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000646s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000739s ]
+
+[ 2016-05-09T13:04:37+08:00 ] 127.0.0.1 /wxdemo/WxOther/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000795s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000678s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006586s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006664s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000551s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000654s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000725s ]
+
+[ 2016-05-09T17:20:47+08:00 ] 127.0.0.1 /wxdemo/WxMenu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000674s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wx_menue` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `wx_menue` WHERE `pid` = '0' AND `wxid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wx_menue` WHERE ( pid='9D4479C8-3295-48CB-B2EF-07313366BF5F' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_menue` WHERE ( pid='07B19906-2802-436E-B72B-DE6DE928672B' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_menue` WHERE ( pid='0F5AB5B9-DB6C-4712-8221-7DA7A952F6A3' )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: 0 F:\wampcz\www\wxdemo\Application\Home\Controller\WxMenuController.class.php 第 135 行.
+NOTIC: [8] Undefined index: 1 F:\wampcz\www\wxdemo\Application\Home\Controller\WxMenuController.class.php 第 136 行.
+NOTIC: [8] Undefined index: 2 F:\wampcz\www\wxdemo\Application\Home\Controller\WxMenuController.class.php 第 137 行.
+NOTIC: [8] Undefined index: 3 F:\wampcz\www\wxdemo\Application\Home\Controller\WxMenuController.class.php 第 138 行.
+NOTIC: [8] Undefined index: 4 F:\wampcz\www\wxdemo\Application\Home\Controller\WxMenuController.class.php 第 139 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000184s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000268s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017334s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017412s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000567s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000638s ]
+
+[ 2016-05-09T17:20:47+08:00 ] 127.0.0.1 /wxdemo/WxMenu/lib/webuploader/0.1.5/webuploader.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000721s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 非法操作:lib
+
+[ 2016-05-09T17:21:50+08:00 ] 127.0.0.1 /wxdemo/WxMenu/lib/webuploader/0.1.5/webuploader.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000475s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000766s ]
+NOTIC: [2] ini_set() [<a href='function.ini-set'>function.ini-set</a>]: A session is active. You cannot change the session module's ini settings at this time F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1245 行.
+NOTIC: [8] A session had already been started - ignoring session_start() F:\wampcz\www\wxdemo\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 非法操作:lib
+

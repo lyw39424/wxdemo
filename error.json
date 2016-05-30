@@ -1,0 +1,1 @@
+"1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1\n [ SQL\u8bed\u53e5 ] : SELECT * FROM `wx_wechat` WHERE ( id= ) LIMIT 1  "

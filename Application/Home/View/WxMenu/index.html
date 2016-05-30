@@ -1,0 +1,806 @@
+<!--_meta 作为公共模版分离出去-->
+<!DOCTYPE HTML>
+<html>
+<head>
+    <include file="common:meta" />
+    <link href="lib/webuploader/0.1.5/webuploader.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="page-container">
+    <form action="{:U('WxMenu/index')}" method="post" class="form form-horizontal" id="menuadd">
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">备注:<span style="color:red"></span></label>
+            <div class="formControls col-xs-8 col-sm-9"><span style="color:red">（一级菜单最多三个,二级菜单最多五个）</span></div>
+        </div>
+
+
+        <table border="2" bordercolor="#288822" cellpadding="1" cellspacing="1" style="width: 100%;hetgh:100%">
+            <thead>
+            <tr class="text-c">
+                <th>一级菜单与类型</th>
+                <th >一级菜单值</th>
+                <th >二级菜单与类型</th>
+                <th >二级菜单值</th>
+            </tr>
+            </thead>
+            <tbody>
+            <!--一级菜单-->
+            <tr valign="center">
+                <td rowspan="5" align="center" style="width: 20%;">
+                    <div class="row cl">
+                        <label class="form-label col-xs-5 col-sm-4"><span class="c-red">*</span>名称：</label>
+                        <div class="formControls col-xs-5 col-sm-6">
+                            <input type="text" class="input-text"  placeholder="最多5个字"  name="menu0" value="{$menuo.me_name}">
+                        </div>
+                    </div>
+                    <div class="row cl">
+                        <label class="form-label col-xs-5 col-sm-4"><span class="c-red">*</span>类型：</label>
+                        <div class="formControls col-xs-7 col-sm-8 skin-minimal">
+                            <if condition="$menuo.me_type eq 'click'"> 
+                                <div class="radio-box">
+                                    <input name="menu0_box" type="radio" value="click"  checked>
+                                    <label for="sex-1">关键字回复</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input name="menu0_box" type="radio" value="view"  >
+                                    <label for="sex-2">url</label>
+                                </div>
+                                <else />
+                                <div class="radio-box">
+                                    <input name="menu0_box" type="radio" value="click"  >
+                                    <label for="sex-1">关键字回复</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input name="menu0_box" type="radio" value="view"  checked>
+                                    <label for="sex-2">url</label>
+                                </div>
+                            </if>
+
+                        </div>
+                    </div>
+                </td>
+                <td rowspan="5" align="center" style="width: 20%;">
+                    <div class="row cl">
+                        <div class="formControls col-xs-9 col-sm-10">
+                            <input type="text" class="input-text"  placeholder="填写地址或者url(可用信息)"  name="menu0_0" value="{$menuo.url_value}">
+                        </div>
+                    </div>
+                </td>
+
+                <td style="width: 30%;">
+                    <div class="row cl">
+                        <label class="form-label col-xs-5 col-sm-4"><span class="c-red">*</span>二级菜单名称：</label>
+                        <div class="formControls col-xs-5 col-sm-6">
+                            <input type="text" class="input-text"  placeholder="最多7个字"  name="menu0_menu0" value="{$osubmenuo.tw_name}">
+                        </div>
+                    </div>
+                    <div class="row cl">
+                        <label class="form-label col-xs-5 col-sm-4"><span class="c-red">*</span>类型：</label>
+                        <div class="formControls col-xs-7 col-sm-8 skin-minimal">
+                            <if condition="$osubmenuo.me_type eq 'click'"> 
+                                <div class="radio-box">
+                                    <input name="menu0_box0" type="radio" value="click"  checked>
+                                    <label for="sex-1">关键字回复</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input name="menu0_box0" type="radio" value="view"  >
+                                    <label for="sex-2">url</label>
+                                </div>
+                                <else />
+                                <div class="radio-box">
+                                    <input name="menu0_box0" type="radio" value="click"  >
+                                    <label for="sex-1">关键字回复</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input name="menu0_box0" type="radio" value="view" checked >
+                                    <label for="sex-2">url</label>
+                                </div>
+                            </if>
+
+                        </div>
+                    </div>
+                </td>
+                <td style="width: 30%;">
+                    <div class="row cl">
+                        <div class="formControls col-xs-9 col-sm-10">
+                            <input type="text" class="input-text"  placeholder="填写url或者地址"  name="menu0_key0" value="{$osubmenuo.url_value}">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+            <tr valign="center">
+                <td style="width: 30%;">
+                    <div class="row cl">
+                        <label class="form-label col-xs-5 col-sm-4"><span class="c-red">*</span>二级菜单名称：</label>
+                        <div class="formControls col-xs-5 col-sm-6">
+                            <input type="text" class="input-text"  placeholder="最多7个字"  name="menu0_menu1" value="{$tsubmenuo.tw_name}">
+                        </div>
+                    </div>
+                    <div class="row cl">
+                        <label class="form-label col-xs-5 col-sm-4"><span class="c-red">*</span>类型：</label>
+                        <div class="formControls col-xs-7 col-sm-8 skin-minimal">
+                            <if condition="$tsubmenuo.me_type eq 'click'"> 
+                                <div class="radio-box">
+                                    <input name="menu0_box1" type="radio" value="click"  checked>
+                                    <label for="sex-1">关键字回复</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input name="menu0_box1" type="radio" value="view"  >
+                                    <label for="sex-2">url</label>
+                                </div>
+                                <else />
+                                <div class="radio-box">
+                                    <input name="menu0_box1" type="radio" value="click"  >
+                                    <label for="sex-1">关键字回复</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input name="menu0_box1" type="radio" value="view"  checked>
+                                    <label for="sex-2">url</label>
+                                </div>
+                            </if>
+
+                        </div>
+                    </div>
+                </td>
+                <td style="width: 30%;">
+                    <div class="row cl">
+                        <div class="formControls col-xs-9 col-sm-10">
+                            <input type="text" class="input-text"  placeholder="填写url或者地址"  name="menu0_key1" value="{$tsubmenuo.url_value}">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr valign="center">
+                <td style="width: 30%;">
+                    <div class="row cl">
+                        <label class="form-label col-xs-5 col-sm-4"><span class="c-red">*</span>二级菜单名称：</label>
+                        <div class="formControls col-xs-5 col-sm-6">
+                            <input type="text" class="input-text"  placeholder="最多7个字"  name="menu0_menu2" value="{$ssubmenuo.tw_name}">
+                        </div>
+                    </div>
+                    <div class="row cl">
+                        <label class="form-label col-xs-5 col-sm-4"><span class="c-red">*</span>类型：</label>
+                        <div class="formControls col-xs-7 col-sm-8 skin-minimal">
+                            <if condition="$ssubmenuo.me_type eq 'click'"> 
+                                <div class="radio-box">
+                                    <input name="menu0_box2" type="radio" value="click"  checked>
+                                    <label for="sex-1">关键字回复</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input name="menu0_box2" type="radio" value="view"  >
+                                    <label for="sex-2">url</label>
+                                </div>
+                                <else />
+                                <div class="radio-box">
+                                    <input name="menu0_box2" type="radio" value="click"  >
+                                    <label for="sex-1">关键字回复</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input name="menu0_box2" type="radio" value="view"  checked>
+                                    <label for="sex-2">url</label>
+                                </div>
+                            </if>
+
+                        </div>
+                    </div>
+                </td>
+                <td style="width: 30%;">
+                    <div class="row cl">
+                        <div class="formControls col-xs-9 col-sm-10">
+                            <input type="text" class="input-text"  placeholder="填写url或者地址"  name="menu0_key2" value="{$ssubmenuo.url_value}">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr valign="center">
+                <td style="width: 30%;">
+                    <div class="row cl">
+                        <label class="form-label col-xs-5 col-sm-4"><span class="c-red">*</span>二级菜单名称：</label>
+                        <div class="formControls col-xs-5 col-sm-6">
+                            <input type="text" class="input-text"  placeholder="最多7个字"  name="menu0_menu3"  value="{$fsubmenuo.tw_name}">
+                        </div>
+                    </div>
+                    <div class="row cl">
+                        <label class="form-label col-xs-5 col-sm-4"><span class="c-red">*</span>类型：</label>
+                        <div class="formControls col-xs-7 col-sm-8 skin-minimal">
+                            <if condition="$fsubmenuo.me_type eq 'click'"> 
+                                <div class="radio-box">
+                                    <input name="menu0_box3" type="radio" value="click"  checked>
+                                    <label for="sex-1">关键字回复</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input name="menu0_box3" type="radio" value="view"  >
+                                    <label for="sex-2">url</label>
+                                </div>
+                                <else />
+                                <div class="radio-box">
+                                    <input name="menu0_box3" type="radio" value="click"  >
+                                    <label for="sex-1">关键字回复</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input name="menu0_box3" type="radio" value="view" checked >
+                                    <label for="sex-2">url</label>
+                                </div>
+                            </if>
+
+                        </div>
+                    </div>
+                </td>
+                <td style="width: 30%;">
+                    <div class="row cl">
+                        <div class="formControls col-xs-9 col-sm-10">
+                            <input type="text" class="input-text"  placeholder="填写url或者地址"  name="menu0_key3" value="{$fsubmenuo.url_value}">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr valign="center">
+                <td style="width: 30%;">
+                    <div class="row cl">
+                        <label class="form-label col-xs-5 col-sm-4"><span class="c-red">*</span>二级菜单名称：</label>
+                        <div class="formControls col-xs-5 col-sm-6">
+                            <input type="text" class="input-text"  placeholder="最多7个字"  name="menu0_menu4" value="{$esubmenuo.tw_name}">
+                        </div>
+                    </div>
+                    <div class="row cl">
+                        <label class="form-label col-xs-5 col-sm-4"><span class="c-red">*</span>类型：</label>
+                        <div class="formControls col-xs-7 col-sm-8 skin-minimal">
+                            <if condition="$esubmenuo.me_type eq 'click'"> 
+                                <div class="radio-box">
+                                    <input name="menu0_box4" type="radio" value="click"  checked>
+                                    <label for="sex-1">关键字回复</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input name="menu0_box4" type="radio" value="view"  >
+                                    <label for="sex-2">url</label>
+                                </div>
+                                <else />
+                                <div class="radio-box">
+                                    <input name="menu0_box4" type="radio" value="click"  >
+                                    <label for="sex-1">关键字回复</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input name="menu0_box4" type="radio" value="view"  checked>
+                                    <label for="sex-2">url</label>
+                                </div>
+                            </if>
+
+                        </div>
+                    </div>
+                </td>
+                <td style="width: 30%;">
+                    <div class="row cl">
+                        <div class="formControls col-xs-9 col-sm-10">
+                            <input type="text" class="input-text"  placeholder="填写url或者地址"  name="menu0_key4" value="{$esubmenuo.url_value}">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <!--二级菜单-->
+            <tr valign="center">
+                <td rowspan="5" align="center" style="width: 20%;">
+                    <div class="row cl">
+                        <label class="form-label col-xs-5 col-sm-4"><span class="c-red">*</span>名称：</label>
+                        <div class="formControls col-xs-5 col-sm-6">
+                            <input type="text" class="input-text"  placeholder="最多5个字"  name="menu1" value="{$menut.me_name}">
+                        </div>
+                    </div>
+                    <div class="row cl">
+                        <label class="form-label col-xs-5 col-sm-4"><span class="c-red">*</span>类型：</label>
+                        <div class="formControls col-xs-7 col-sm-8 skin-minimal">
+                            <if condition="$menut.me_type eq 'click'"> 
+                                <div class="radio-box">
+                                    <input name="menu1_box" type="radio" value="click"  checked>
+                                    <label for="sex-1">关键字回复</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input name="menu1_box" type="radio" value="view"  >
+                                    <label for="sex-2">url</label>
+                                </div>
+                                <else />
+                                <div class="radio-box">
+                                    <input name="menu1_box" type="radio" value="click"  >
+                                    <label for="sex-1">关键字回复</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input name="menu1_box" type="radio" value="view"  checked>
+                                    <label for="sex-2">url</label>
+                                </div>
+                            </if>
+
+                        </div>
+                    </div>
+                </td>
+                <td rowspan="5" align="center" style="width: 20%;">
+                    <div class="row cl">
+                        <div class="formControls col-xs-9 col-sm-10">
+                            <input type="text" class="input-text"  placeholder="填写地址或者url"  name="menu1_1"  value="{$menut.url_value}">
+                        </div>
+                    </div>
+                </td>
+
+                <td style="width: 30%;">
+                    <div class="row cl">
+                        <label class="form-label col-xs-5 col-sm-4"><span class="c-red">*</span>二级菜单名称：</label>
+                        <div class="formControls col-xs-5 col-sm-6">
+                            <input type="text" class="input-text"  placeholder="最多7个字"  name="menu1_menu0" value="{$osubmenut.tw_name}">
+                        </div>
+                    </div>
+                    <div class="row cl">
+                        <label class="form-label col-xs-5 col-sm-4"><span class="c-red">*</span>类型：</label>
+                        <div class="formControls col-xs-7 col-sm-8 skin-minimal">
+                            <if condition="$osubmenut.me_type eq 'click'"> 
+                                <div class="radio-box">
+                                    <input name="menu1_box0" type="radio" value="click"  checked>
+                                    <label for="sex-1">关键字回复</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input name="menu1_box0" type="radio" value="view"  >
+                                    <label for="sex-2">url</label>
+                                </div>
+                                <else />
+                                <div class="radio-box">
+                                    <input name="menu1_box0" type="radio" value="click"  >
+                                    <label for="sex-1">关键字回复</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input name="menu1_box0" type="radio" value="view"  checked>
+                                    <label for="sex-2">url</label>
+                                </div>
+                            </if>
+
+                        </div>
+                    </div>
+                </td>
+                <td style="width: 30%;">
+                    <div class="row cl">
+                        <div class="formControls col-xs-9 col-sm-10">
+                            <input type="text" class="input-text"  placeholder="填写url或者地址"  name="menu1_key0" value="{$osubmenut.url_value}">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+            <tr valign="center">
+                <td style="width: 30%;">
+                    <div class="row cl">
+                        <label class="form-label col-xs-5 col-sm-4"><span class="c-red">*</span>二级菜单名称：</label>
+                        <div class="formControls col-xs-5 col-sm-6">
+                            <input type="text" class="input-text"  placeholder="最多7个字"  name="menu1_menu1" value="{$tsubmenut.tw_name}">
+                        </div>
+                    </div>
+                    <div class="row cl">
+                        <label class="form-label col-xs-5 col-sm-4"><span class="c-red">*</span>类型：</label>
+                        <div class="formControls col-xs-7 col-sm-8 skin-minimal">
+                            <if condition="$tsubmenut.me_type eq 'click'"> 
+                                <div class="radio-box">
+                                    <input name="menu1_box1" type="radio" value="click"  checked>
+                                    <label for="sex-1">关键字回复</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input name="menu1_box1" type="radio" value="view"  >
+                                    <label for="sex-2">url</label>
+                                </div>
+                                <else />
+                                <div class="radio-box">
+                                    <input name="menu1_box1" type="radio" value="click"  >
+                                    <label for="sex-1">关键字回复</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input name="menu1_box1" type="radio" value="view"  checked>
+                                    <label for="sex-2">url</label>
+                                </div>
+                            </if>
+
+                        </div>
+                    </div>
+                </td>
+                <td style="width: 30%;">
+                    <div class="row cl">
+                        <div class="formControls col-xs-9 col-sm-10">
+                            <input type="text" class="input-text"  placeholder="填写url或者地址"  name="menu1_key1" value="{$tsubmenut.url_value}">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr valign="center">
+                <td style="width: 30%;">
+                    <div class="row cl">
+                        <label class="form-label col-xs-5 col-sm-4"><span class="c-red">*</span>二级菜单名称：</label>
+                        <div class="formControls col-xs-5 col-sm-6">
+                            <input type="text" class="input-text"  placeholder="最多7个字"  name="menu1_menu2"  value="{$ssubmenut.tw_name}">
+                        </div>
+                    </div>
+                    <div class="row cl">
+                        <label class="form-label col-xs-5 col-sm-4"><span class="c-red">*</span>类型：</label>
+                        <div class="formControls col-xs-7 col-sm-8 skin-minimal">
+                            <if condition="$ssubmenut.me_type eq 'click'"> 
+                                <div class="radio-box">
+                                    <input name="menu1_box2" type="radio" value="click"  checked>
+                                    <label for="sex-1">关键字回复</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input name="menu1_box2" type="radio" value="view"  >
+                                    <label for="sex-2">url</label>
+                                </div>
+                                <else />
+                                <div class="radio-box">
+                                    <input name="menu1_box2" type="radio" value="click"  >
+                                    <label for="sex-1">关键字回复</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input name="menu1_box2" type="radio" value="view"  checked>
+                                    <label for="sex-2">url</label>
+                                </div>
+                            </if>
+
+                        </div>
+                    </div>
+                </td>
+                <td style="width: 30%;">
+                    <div class="row cl">
+                        <div class="formControls col-xs-9 col-sm-10">
+                            <input type="text" class="input-text"  placeholder="填写url或者地址"  name="menu1_key2" value="{$ssubmenut.url_value}">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr valign="center">
+                <td style="width: 30%;">
+                    <div class="row cl">
+                        <label class="form-label col-xs-5 col-sm-4"><span class="c-red">*</span>二级菜单名称：</label>
+                        <div class="formControls col-xs-5 col-sm-6">
+                            <input type="text" class="input-text"  placeholder="最多7个字"  name="menu1_menu3" value="{$fsubmenut.tw_name}">
+                        </div>
+                    </div>
+                    <div class="row cl">
+                        <label class="form-label col-xs-5 col-sm-4"><span class="c-red">*</span>类型：</label>
+                        <div class="formControls col-xs-7 col-sm-8 skin-minimal">
+                            <if condition="$fsubmenut.me_type eq 'click'"> 
+                                <div class="radio-box">
+                                    <input name="menu1_box3" type="radio" value="click"  checked>
+                                    <label for="sex-1">关键字回复</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input name="menu1_box3" type="radio" value="view"  >
+                                    <label for="sex-2">url</label>
+                                </div>
+                                <else />
+                                <div class="radio-box">
+                                    <input name="menu1_box3" type="radio" value="click"  >
+                                    <label for="sex-1">关键字回复</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input name="menu1_box3" type="radio" value="view"  checked>
+                                    <label for="sex-2">url</label>
+                                </div>
+                            </if>
+
+                        </div>
+                    </div>
+                </td>
+                <td style="width: 30%;">
+                    <div class="row cl">
+                        <div class="formControls col-xs-9 col-sm-10">
+                            <input type="text" class="input-text"  placeholder="填写url或者地址"  name="menu1_key3" value="{$fsubmenut.url_value}">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr valign="center">
+                <td style="width: 30%;">
+                    <div class="row cl">
+                        <label class="form-label col-xs-5 col-sm-4"><span class="c-red">*</span>二级菜单名称：</label>
+                        <div class="formControls col-xs-5 col-sm-6">
+                            <input type="text" class="input-text"  placeholder="最多7个字"  name="menu1_menu4" value="{$esubmenut.tw_name}">
+                        </div>
+                    </div>
+                    <div class="row cl">
+                        <label class="form-label col-xs-5 col-sm-4"><span class="c-red">*</span>类型：</label>
+                        <div class="formControls col-xs-7 col-sm-8 skin-minimal">
+                            <if condition="$esubmenut.me_type eq 'click'"> 
+                                <div class="radio-box">
+                                    <input name="menu1_box4" type="radio" value="click"  checked>
+                                    <label for="sex-1">关键字回复</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input name="menu1_box4" type="radio" value="view"  >
+                                    <label for="sex-2">url</label>
+                                </div>
+                                <else />
+                                <div class="radio-box">
+                                    <input name="menu1_box4" type="radio" value="click"  >
+                                    <label for="sex-1">关键字回复</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input name="menu1_box4" type="radio" value="view"  checked>
+                                    <label for="sex-2">url</label>
+                                </div>
+                            </if>
+                        </div>
+                    </div>
+                </td>
+                <td style="width: 30%;">
+                    <div class="row cl">
+                        <div class="formControls col-xs-9 col-sm-10">
+                            <input type="text" class="input-text"  placeholder="填写url或者地址"  name="menu1_key4" value="{$esubmenut.url_value}">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <!--三级菜单-->
+            <tr valign="center">
+                <td rowspan="5" align="center" style="width: 20%;">
+                    <div class="row cl">
+                        <label class="form-label col-xs-5 col-sm-4"><span class="c-red">*</span>名称：</label>
+                        <div class="formControls col-xs-5 col-sm-6">
+                            <input type="text" class="input-text"  placeholder="最多5个字"  name="menu2" value="{$menus.me_name}">
+                        </div>
+                    </div>
+                    <div class="row cl">
+                        <label class="form-label col-xs-5 col-sm-4"><span class="c-red">*</span>类型：</label>
+                        <div class="formControls col-xs-7 col-sm-8 skin-minimal">
+                            <if condition="$menus.me_type eq 'click'"> 
+                                <div class="radio-box">
+                                    <input name="menu2_box" type="radio" value="click"  checked>
+                                    <label for="sex-1">关键字回复</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input name="menu2_box" type="radio" value="view"  >
+                                    <label for="sex-2">url</label>
+                                </div>
+                                <else />
+                                <div class="radio-box">
+                                    <input name="menu2_box" type="radio" value="click"  >
+                                    <label for="sex-1">关键字回复</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input name="menu2_box" type="radio" value="view"  checked>
+                                    <label for="sex-2">url</label>
+                                </div>
+                            </if>
+
+                        </div>
+                    </div>
+                </td>
+                <td rowspan="5" align="center" style="width: 20%;">
+                    <div class="row cl">
+                        <div class="formControls col-xs-9 col-sm-10">
+                            <input type="text" class="input-text"  placeholder="填写地址或者url"  name="menu2_2" value="{$menus.url_value}">
+                        </div>
+                    </div>
+                </td>
+
+                <td style="width: 30%;">
+                    <div class="row cl">
+                        <label class="form-label col-xs-5 col-sm-4"><span class="c-red">*</span>二级菜单名称：</label>
+                        <div class="formControls col-xs-5 col-sm-6">
+                            <input type="text" class="input-text"  placeholder="最多7个字"  name="menu2_menu0" value="{$osubmenus.tw_name}">
+                        </div>
+                    </div>
+                    <div class="row cl">
+                        <label class="form-label col-xs-5 col-sm-4"><span class="c-red">*</span>类型：</label>
+                        <div class="formControls col-xs-7 col-sm-8 skin-minimal">
+                            <if condition="$osubmenus.me_type eq 'click'"> 
+                                <div class="radio-box">
+                                    <input name="menu2_box0" type="radio" value="click"  checked>
+                                    <label for="sex-1">关键字回复</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input name="menu2_box0" type="radio" value="view"  >
+                                    <label for="sex-2">url</label>
+                                </div>
+                                <else />
+                                <div class="radio-box">
+                                    <input name="menu2_box0" type="radio" value="click"  >
+                                    <label for="sex-1">关键字回复</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input name="menu2_box0" type="radio" value="view"  checked>
+                                    <label for="sex-2">url</label>
+                                </div>
+                            </if>
+
+                        </div>
+                    </div>
+                </td>
+                <td style="width: 30%;">
+                    <div class="row cl">
+                        <div class="formControls col-xs-9 col-sm-10">
+                            <input type="text" class="input-text"  placeholder="填写url或者地址"  name="menu2_key0" value="{$osubmenus.url_value}">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+            <tr valign="center">
+                <td style="width: 30%;">
+                    <div class="row cl">
+                        <label class="form-label col-xs-5 col-sm-4"><span class="c-red">*</span>二级菜单名称：</label>
+                        <div class="formControls col-xs-5 col-sm-6">
+                            <input type="text" class="input-text"  placeholder="最多7个字"  name="menu2_menu1" value="{$tsubmenus.tw_name}">
+                        </div>
+                    </div>
+                    <div class="row cl">
+                        <label class="form-label col-xs-5 col-sm-4"><span class="c-red">*</span>类型：</label>
+                        <div class="formControls col-xs-7 col-sm-8 skin-minimal">
+                            <if condition="$tsubmenus.me_type eq 'click'"> 
+                                <div class="radio-box">
+                                    <input name="menu2_box1" type="radio" value="click"  checked>
+                                    <label for="sex-1">关键字回复</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input name="menu2_box1" type="radio" value="view"  >
+                                    <label for="sex-2">url</label>
+                                </div>
+                                <else />
+                                <div class="radio-box">
+                                    <input name="menu2_box1" type="radio" value="click"  >
+                                    <label for="sex-1">关键字回复</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input name="menu2_box1" type="radio" value="view"  checked>
+                                    <label for="sex-2">url</label>
+                                </div>
+                            </if>
+
+                        </div>
+                    </div>
+                </td>
+                <td style="width: 30%;">
+                    <div class="row cl">
+                        <div class="formControls col-xs-9 col-sm-10">
+                            <input type="text" class="input-text"  placeholder="填写url或者地址"  name="menu2_key1" value="{$tsubmenus.url_value}">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr valign="center">
+                <td style="width: 30%;">
+                    <div class="row cl">
+                        <label class="form-label col-xs-5 col-sm-4"><span class="c-red">*</span>二级菜单名称：</label>
+                        <div class="formControls col-xs-5 col-sm-6">
+                            <input type="text" class="input-text"  placeholder="最多7个字"  name="menu2_menu2" value="{$ssubmenus.tw_name}">
+                        </div>
+                    </div>
+                    <div class="row cl">
+                        <label class="form-label col-xs-5 col-sm-4"><span class="c-red">*</span>类型：</label>
+                        <div class="formControls col-xs-7 col-sm-8 skin-minimal">
+                            <if condition="$ssubmenus.me_type eq 'click'"> 
+                                <div class="radio-box">
+                                    <input name="menu2_box2" type="radio" value="click"  checked>
+                                    <label for="sex-1">关键字回复</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input name="menu2_box2" type="radio" value="view"  >
+                                    <label for="sex-2">url</label>
+                                </div>
+                                <else />
+                                <div class="radio-box">
+                                    <input name="menu2_box2" type="radio" value="click"  >
+                                    <label for="sex-1">关键字回复</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input name="menu2_box2" type="radio" value="view"  checked>
+                                    <label for="sex-2">url</label>
+                                </div>
+                            </if>
+
+                        </div>
+                    </div>
+                </td>
+                <td style="width: 30%;">
+                    <div class="row cl">
+                        <div class="formControls col-xs-9 col-sm-10">
+                            <input type="text" class="input-text"  placeholder="填写url或者地址"  name="menu2_key2" value="{$ssubmenus.url_value}">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr valign="center">
+                <td style="width: 30%;">
+                    <div class="row cl">
+                        <label class="form-label col-xs-5 col-sm-4"><span class="c-red">*</span>二级菜单名称：</label>
+                        <div class="formControls col-xs-5 col-sm-6">
+                            <input type="text" class="input-text"  placeholder="最多7个字"  name="menu2_menu3" value="{$fsubmenus.tw_name}">
+                        </div>
+                    </div>
+                    <div class="row cl">
+                        <label class="form-label col-xs-5 col-sm-4"><span class="c-red">*</span>类型：</label>
+                        <div class="formControls col-xs-7 col-sm-8 skin-minimal">
+                            <if condition="$fsubmenus.me_type eq 'click'"> 
+                                <div class="radio-box">
+                                    <input name="menu2_box3" type="radio" value="click"  checked>
+                                    <label for="sex-1">关键字回复</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input name="menu2_box3" type="radio" value="view"  >
+                                    <label for="sex-2">url</label>
+                                </div>
+                                <else />
+                                <div class="radio-box">
+                                    <input name="menu2_box3" type="radio" value="click"  >
+                                    <label for="sex-1">关键字回复</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input name="menu2_box3" type="radio" value="view"  checked>
+                                    <label for="sex-2">url</label>
+                                </div>
+                            </if>
+
+                        </div>
+                    </div>
+                </td>
+                <td style="width: 30%;">
+                    <div class="row cl">
+                        <div class="formControls col-xs-9 col-sm-10">
+                            <input type="text" class="input-text"  placeholder="填写url或者地址"  name="menu2_key3" value="{$fsubmenus.url_value}">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr valign="center">
+                <td style="width: 30%;">
+                    <div class="row cl">
+                        <label class="form-label col-xs-5 col-sm-4"><span class="c-red">*</span>二级菜单名称：</label>
+                        <div class="formControls col-xs-5 col-sm-6">
+                            <input type="text" class="input-text"  placeholder="最多7个字"  name="menu2_menu4"  value="{$esubmenus.tw_name}">
+                        </div>
+                    </div>
+                    <div class="row cl">
+                        <label class="form-label col-xs-5 col-sm-4"><span class="c-red">*</span>类型：</label>
+                        <div class="formControls col-xs-7 col-sm-8 skin-minimal">
+                            <if condition="$esubmenus.me_type eq 'click'"> 
+                                <div class="radio-box">
+                                    <input name="menu2_box4" type="radio" value="click"  checked>
+                                    <label for="sex-1">关键字回复</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input name="menu2_box4" type="radio" value="view"  >
+                                    <label for="sex-2">url</label>
+                                </div>
+                                <else />
+                                <div class="radio-box">
+                                    <input name="menu2_box4" type="radio" value="click"  >
+                                    <label for="sex-1">关键字回复</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input name="menu2_box4" type="radio" value="view"  checked>
+                                    <label for="sex-2">url</label>
+                                </div>
+                            </if>
+
+                        </div>
+                    </div>
+                </td>
+                <td style="width: 30%;">
+                    <div class="row cl">
+                        <div class="formControls col-xs-9 col-sm-10">
+                            <input type="text" class="input-text"  placeholder="填写url或者地址"  name="menu2_key4" value="{$esubmenus.url_value}">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <div class="row cl">
+            <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
+                <button onClick="article_save();" class="btn btn-secondary radius" type="button"><i class="Hui-iconfont">&#xe632;</i> 保存</button>
+
+                <button onClick="layer_close();" class="btn btn-default radius" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!--_footer 作为公共模版分离出去-->
+<include file="common:footer" />
+<script type="text/javascript">
+    function  article_save(){
+        document.getElementById('menuadd').submit();
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!--_meta 作为公共模版分离出去-->
+<!DOCTYPE HTML>
+<html>
+<head>
+	<include file="common:meta" />
+<![endif]-->
+<!--/meta 作为公共模版分离出去-->
+<title>编辑菜单</title>
+</head>
+<body>
+<article class="page-container">
+	<form action="{:U('Menue/add')}" method="post" class="form form-horizontal" id="form-member-add">
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>菜单总类：</label>
+			<div class="formControls col-xs-3 col-sm-2">
+				<input type="text" class="input-text" value="{$name}" placeholder="" id="menu_cate" name="menu_cate">
+			</div>
+		</div>
+		<div class="row cl">
+			<button type="button" onclick="add()" class="btn btn-primary">添加下级菜单</button>
+		</div>
+		<volist name="list" id="vo"  key="k">
+		<div class="delmen"><label class="form-label col-xs-3 col-sm-2"><span class="c-red">*</span>二级级菜单名称：</label>
+			<div class="formControls col-xs-3 col-sm-2"> <input type="text" class="input-text" value="{$vo.menu_tite}" placeholder=""  name="title_name[{$k}]"> </div>
+			<label class="form-label col-xs-3 col-sm-2"><span class="c-red">*</span>URL：</label>
+			<div class="formControls col-xs-3 col-sm-2"><input type="text" class="input-text" value="{$vo.titel_code}" placeholder=""  name="title_code[{$k}]"></div>
+			<div class="row cl">
+				<button type="button" onclick="adds('{$k}')" class="btn btn-primary radius">添加按钮</button><button type="button" onclick="delss(this)" class="btn btn-warning radius">删除二级</button></div>
+			<div id="menubutton{$k}">
+			<volist name="vo.buttons" id="detail"  key="ke">
+				<div class="meunes"><label class="form-label col-xs-3 col-sm-2"><span class="c-red">*</span>按钮：</label><div class="formControls col-xs-4 col-sm-3">
+				<input type="text" class="input-text" value="{$detail.menu_name}" placeholder=""  name="menu_name[{$ke}][{$k}]"></div><label class="form-label col-xs-3 col-sm-2">
+					<span class="c-red">*</span>URL：</label><div class="formControls col-xs-4 col-sm-3">
+					<input type="text" class="input-text" value="{$detail.menu_code}" placeholder=""  name="menu_code[{$ke}][{$k}]"></div>
+				<div class="row cl"><button type="button" onclick="del(this)" class="btn btn-danger radius">删除</button></div></div>
+			</volist>
+
+			</div>
+		</div>
+		</volist>
+		<div id="InputsWrapper"></div>
+		<div class="row cl">
+			<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
+				<input class="btn btn-primary radius" type="submit" value="&nbsp;&nbsp;提交&nbsp;&nbsp;">
+			</div>
+		</div>
+	</form>
+</article>
+
+<!--_footer 作为公共模版分离出去-->
+<include file="common:footer" />
+<!--/_footer /作为公共模版分离出去--> 
+
+<!--请在下方写此页面业务相关的脚本--> 
+<script type="text/javascript">
+	var i={$k}+1;
+	var j={$ke}+2;
+	function add(){
+		$(InputsWrapper).append('<div class="delmen"><label class="form-label col-xs-3 col-sm-2"><span class="c-red">*</span>二级级菜单名称：</label><div class="formControls col-xs-3 col-sm-2"> <input type="text" class="input-text" value="" placeholder=""  name="title_name['+i+']"> </div> <label class="form-label col-xs-3 col-sm-2"><span class="c-red">*</span>URL：</label><div class="formControls col-xs-3 col-sm-2"><input type="text" class="input-text" value="" placeholder=""  name="title_code['+i+']"></div><div class="row cl"><button type="button" onclick="adds('+i+')" class="btn btn-primary radius">添加按钮</button><button type="button" onclick="delss(this)" class="btn btn-warning radius">删除二级</button></div><div id="menubutton'+i+'"></div></div>');
+		i++;
+	}
+	function adds(i){
+        var menus="#menubutton"+i;
+       $(menus).append('<div class="meunes"><label class="form-label col-xs-3 col-sm-2"><span class="c-red">*</span>按钮：</label><div class="formControls col-xs-4 col-sm-3"><input type="text" class="input-text" value="" placeholder=""  name="menu_name['+j+']['+i+']"></div><label class="form-label col-xs-3 col-sm-2"><span class="c-red">*</span>URL：</label><div class="formControls col-xs-4 col-sm-3"><input type="text" class="input-text" value="" placeholder=""  name="menu_code['+j+']['+i+']"></div><div class="row cl"><button type="button" onclick="del(this)" class="btn btn-danger radius">删除</button></div></div>');
+		j++;
+	}
+	function del(s){
+		$(s).parent().parent().remove();
+	}
+    function delss(f){
+        console.log($(f));
+        $(f).parent().parent().remove();
+    }
+</script> 
+<!--/请在上方写此页面业务相关的脚本-->
+</body>
+</html>

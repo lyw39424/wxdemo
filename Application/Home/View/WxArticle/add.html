@@ -1,0 +1,90 @@
+<!--_meta 作为公共模版分离出去-->
+<!DOCTYPE HTML>
+<html>
+<head>
+	<script src="__PUBLIC__/admin/lib/jquery/1.9.1/jquery.min.js" ></script>
+	<link href="__PUBLIC__/admin/upload/uploadify3.2.1/uploadify.css" rel="stylesheet" type="text/css" />
+	<script src="__PUBLIC__/admin/upload/uploadify3.2.1/jquery.uploadify.min.js"></script>
+<!--ueditor-->
+	<link href="__ROOT__/umeditor/themes/default/css/umeditor.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" charset="utf-8" src="__ROOT__/umeditor/umeditor.config.js"></script>
+	<script type="text/javascript" charset="utf-8" src="__ROOT__/umeditor/umeditor.min.js"></script>
+	<script type="text/javascript" src="__ROOT__/umeditor/lang/zh-cn/zh-cn.js"></script>
+<include file="common:meta" />
+<title>添加新闻消息</title>
+</head>
+<script type="text/javascript">
+	$(function() {
+		$('#file_upload').uploadify({
+			'swf'      : '__PUBLIC__/admin/upload/uploadify3.2.1/uploadify.swf',
+			'uploader' : '{:U("GrReply/img")}',
+			'buttonText' : '头像上传',
+			'onUploadSuccess' : function(file, data) {
+				var datajson=eval('(' + data + ')');
+				$('#img').attr('src','__ROOT__/Uploads/'+ datajson.url);
+				$('#ne_img').val(datajson.url);
+			},
+		});
+	});
+</script>
+<body>
+<article class="page-container">
+	<form class="form form-horizontal" action="{:U('WxArticle/add')}" method="post" id="form-admin-add">
+		<input type="hidden" id="ne_img" name="ne_img" />
+	<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>封面：</label>
+			<div class="form-group" style="height: 200px;text-align:center;">
+				<img id="img" src="__PUBLIC__/admin/upload/images/nophoto.jpg" width="130" height="130" border="0" />
+				<input id="file_upload" name="file_upload" type="file" multiple="true" value="" />
+			</div>
+	</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-3">类型：</label>
+			<div class="formControls col-xs-8 col-sm-9"> <span class="select-box">
+				<select class="select" size="1" name="province" id="province" onChange="getCity()">
+					<OPTION VALUE="0">请选择类型 </OPTION>
+					<volist name="cate"  id="vo">
+						<OPTION VALUE="{$vo.code}">{$vo.name} </OPTION>
+					</volist>
+				</select>
+				</span> </div>
+		</div>
+	<div class="row cl">
+		<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>标题：</label>
+		<div class="formControls col-xs-8 col-sm-9">
+			<input type="text" class="input-text" value="" placeholder="" id="name" name="name">
+		</div>
+	</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>作者：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" value="" placeholder="" id="author" name="author">
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>内容：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<textarea name="discription" id="ne_count" style="width:1000px;height:240px;" ></textarea>
+				<script type="text/javascript">
+					var editor = UM.getEditor('ne_count');
+				</script>
+			</div>
+        </div>
+	<div class="row cl">
+		<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
+			<input class="btn btn-primary radius" type="submit" value="&nbsp;&nbsp;提交&nbsp;&nbsp;">
+		</div>
+	</div>
+	</form>
+</article>
+<script type="text/javascript" src="__PUBLIC__/admin/lib/layer/2.1/layer.js"></script>
+<script type="text/javascript" src="__PUBLIC__/admin/lib/icheck/jquery.icheck.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/admin/lib/jquery.validation/1.14.0/jquery.validate.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/admin/lib/jquery.validation/1.14.0/validate-methods.js"></script>
+<script type="text/javascript" src="__PUBLIC__/admin/lib/jquery.validation/1.14.0/messages_zh.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/admin/static/js/H-ui.js"></script>
+<script type="text/javascript" src="__PUBLIC__/admin/static/js/H-ui.admin.js"></script>
+
+<!--/请在上方写此页面业务相关的脚本-->
+</body>
+</html>
