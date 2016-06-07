@@ -62,6 +62,7 @@ class WechatAuth {
     private $requestCodeURL = 'https://open.weixin.qq.com/connect/oauth2/authorize';
 
     private $oauthApiURL = 'https://api.weixin.qq.com/sns';
+   //上传下载多媒体接口
 
     /**
      * 构造方法，调用微信高级接口时实例化SDK
@@ -90,9 +91,9 @@ class WechatAuth {
             'redirect_uri'  => $redirect_uri,
             'response_type' => 'code',
             'scope'         => $scope,
+            'state'         => 'STATE',
         );
-
-        if(!is_null($state) && preg_match('/[a-zA-Z0-9]+/', $state)){
+   if(!is_null($state) && preg_match('/[a-zA-Z0-9]+/', $state)){
             $query['state'] = $state;
         }
 
@@ -218,6 +219,70 @@ class WechatAuth {
 
         $url = "{$this->apiURL}/media/get?";
         return $url . http_build_query($param);
+    }
+
+
+    //上传多媒体文件
+    function uploadMedia($media_id){
+        $asstoken=$this->accessToken;
+        $http="http://file.api.weixin.qq.com/cgi-bin/media/upload?access_token=$asstoken&media_id=$media_id";
+        $file = realpath('1.mp3'); //要上传的文件
+        $fields['media'] = '@'.$file;
+        $ch = curl_init($http) ;
+        curl_setopt($ch, CURLOPT_POST, 1);
+        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+        curl_setopt($ch, CURLOPT_POST, 1);
+        curl_setopt($ch, CURLOPT_POSTFIELDS,$fields);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        $result = curl_exec($ch) ;
+        if (curl_errno($ch)) {
+            return curl_error($ch);
+        }
+        curl_close($ch);
+        return $result;
+    }
+
+    //下载多媒体文件
+    function saveMedia($media_id,$type){
+        $asstoken=$this->accessToken;
+        $http="http://file.api.weixin.qq.com/cgi-bin/media/get?access_token=$asstoken&media_id=$media_id";
+        $fileInfo = $this->downloadWeixinFile($http);
+        //文件目录
+       if($type=='img'){
+           $dirname = "./Uploads/wxmenue/img/";
+           //文件名
+           $filename =  time().rand(100,999).".jpg";
+       }else{
+           $dirname = "./Uploads/wxmenue/vedio/";
+           //文件名
+           $filename =  time().rand(100,999).".mp3";
+       }
+        $this->saveWeixinFile($dirname.$filename, $fileInfo["body"]);
+        $data="wxmenue/".$type."/".$filename;
+        return $data;
+    }
+    function downloadWeixinFile($url)
+    {
+        $ch = curl_init($url);
+        curl_setopt($ch, CURLOPT_HEADER, 0);
+        curl_setopt($ch, CURLOPT_NOBODY, 0);    //只取body头
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        $package = curl_exec($ch);
+        $httpinfo = curl_getinfo($ch);
+        curl_close($ch);
+        $imageAll = array_merge(array('header' => $httpinfo), array('body' => $package));
+        return $imageAll;
+    }
+    function saveWeixinFile($filename, $filecontent)
+    {
+        $local_file = fopen($filename, 'w');
+        if (false !== $local_file) {
+            if (false !== fwrite($local_file, $filecontent)) {
+                fclose($local_file);
+            }
+        }
     }
 
     /**
@@ -454,9 +519,17 @@ class WechatAuth {
      * @param  string $ticket 通过 qrcodeCreate接口获取到的ticket
      * @return string         二维码URL
      */
+    public function getticket(){
+        $pram=array('type' => 'jsapi');
+      return $this->api("ticket/getticket",'','GET',$pram);
+    }
     public function showqrcode($ticket){
         return "{$this->qrcodeURL}/showqrcode?ticket={$ticket}";
     }
+    /**
+     * 根据access_token获取jsapi_ticket
+     * @return string         json数组
+     */
 
     /**
      * 长链接转短链接

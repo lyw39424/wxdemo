@@ -52,4 +52,16 @@ class UserInfoController extends Controller {
         }
         return $str;
     }
+//下载多媒体文件
+public function upload(){
+    $vodie=I('post.voice');
+    $imgurl=I('post.pic');
+    $code=new  WechatAuth($this->appId,$this->appSecret);
+    $access= $code->getAccessToken();
+    $data['pic']=$code->saveMedia($imgurl,'img');
+    $data['vioce']=$code->saveMedia($vodie,'vedio');
+    return $data;
+}
+
+
 }
